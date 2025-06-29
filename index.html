@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta content="" itemprop="image" property="og:image">
+    <meta property="og:title" content="2025 সাল উপলক্ষে ফ্রি এমবি নিন!">
+    <meta content="16 gb ইন্টারনেট ফিরি পেতে ভিজিট করুন এবং 
+    50 জনকে সেয়ার করুন " property="og:description">
+    
+    
+    
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    
+    
+</head>
+    <title>ফ্রি এমবি ইন্টারনেট </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  text-align: center;
+}
+header img.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+header img.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+        header img {
+            height: 270px;
+            width: 100%;
+        }
+
+        h3 {
+            background: rgb(0, 4, 250);
+            color: rgb(179, 255, 0);
+            font-weight: bolder;
+            font-size: 26px;
+            text-align: center;
+            margin: 0;
+            padding: 15px 0;
+            font-weight: bolder;
+        }
+
+
+
+
+  #clickButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 390px;
+    text-transform: uppercase;
+    font-size: 28px;
+    border-radius: 20px;
+  
+  }
+
+
+        #loading {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #progress-container {
+            width: 80%;
+            height: 30px;
+            background-color:red;
+            border-radius: 25px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #progress-bar {
+            height: 100%;
+            width: 0;
+            background-color:#28a745  ;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 25px;
+        }
+
+        #progress-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        #phone-form {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #phone-form input {
+            padding: 15px;
+            font-size: 18px;
+            margin: 10px 0;
+            width: 80%;
+            border:5px solid red;
+            border-radius: 15px;
+        }
+
+        #phone-form button {
+            padding: 10px 20px;
+            font-size: 26px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 340px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        #confirmation-section {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #confirmation-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        #confirmation-section button {
+            padding: 15px 30px;
+            font-size: 22px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        #confirmation-section button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1000;
+            width: 300px;
+            color: black;
+        }
+
+        #popup h2 {
+            font-size: 24px;
+            color: black;
+        }
+
+        #popup p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        #popup button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        #popup button:hover {
+            background-color: darkred;
+        }
+
+       
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        .comment-section {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 22px;
+  color: #365899;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+#comments-container {
+  margin-top: 15px;
+  padding: 10px 0;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.comment:hover {
+  background-color: #f1f1f1;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-content strong {
+  font-size: 16px;
+  color: #365899;
+}
+
+.comment-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #606770;
+}
+
+.comment-actions span {
+  cursor: pointer;
+  color: #65676b;
+}
+
+.comment-actions span:hover {
+  text-decoration: underline;
+}
+
+.add-comment {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#new-comment {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#post-btn {
+  padding: 12px 20px;
+  background-color: #365899;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  
+}
+
+#post-btn:hover {
+  background-color: #2d4d9b;
+  
+}
+ul{
+  height: 100px;
+}
+
+
+.share-Messenger {
+
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0078FF; /* মেসেঞ্জারের ব্লু কালার */
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  height: 46px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+
+
+
+.share-Messenger i{
+  margin-right: 10px; /* আইকন ও টেক্সটের মধ্যে কিছু স্পেস */
+  font-size: 40px;
+  margin-right: 10px; 
+  color: rgba(4, 240, 4, 0.993);
+}
+
+
+
+
+
+
+
+.share-whatsapp {
+  margin-top:20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0078FF; 
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  height: 46px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  
+}
+
+.share-whatsapp i {
+  margin-right: 10px; 
+  font-size: 40px;
+  color: rgb(102, 255, 0);
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+.share-submit {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 10px 20px;
+  background-color: red; 
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  height: 46px;
+  border-radius: 20px;
+  width: 300px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+
+    </style>
+</head>
+<body>
+
+<header>
+  <img src="img.jpg" alt="Slide 1" class="slide active" />
+  <img src="img2.jpg" alt="Slide 2" class="slide" />
+  <img src="img3.jpg" alt="Slide 3" class="slide" />
+</header>
+
+<h3>দয়া করে নিচে "GET ৳২০০০" বোতামে ক্লিক করুন এবং আপনার মোবাইল নম্বর লিখুন যাতে আপনি ৳২০০০ বার্ষিক উপহার পেতে পারেন। </h3>
+
+<button id="clickButton">GET ৳২০০০</button>
+
+<div id="loading">
+    <div id="progress-container">
+        <div id="progress-bar">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+    <p>Loading...</p>
+</div>
+
+<form id="phone-form">
+    <label for="phone-number">Enter your phone number:</label>
+    <input type="tel" id="phone-number" name="phone-number" required placeholder="আপনার মোবাইল নাম্বারটি দিন">
+    <button type="submit">Submit</button>
+</form>
+
+<div id="confirmation-section">
+    <p>আপনার মোবাইল নাম্বার সফলভাবে সাবমিট করা হয়েছে!</p>
+    <p id="user-phone"></p>
+    <p style="font-size: 32px; color: red;"> আপনার এই নাম্বারে  ১৬ gb   <strong>ইন্টারনেট পাবে </strong>!</p>
+    <p>এটি কনফার্ম করতে ১২ জনকে শেয়ার করুন।</p>
+    <p>শেয়ার করতে ২টি অপশন বেছে নিন:</p>
+    
+
+<a href="fb-messenger://share/?link=https://freemboffer.xyz" target="_blank" class="share-Messenger" id="shareMessenger">
+  <i class="fab fa-facebook-messenger"></i> মেসেঞ্জারে শেয়ার করুন
+</a>
+
+<a href="https://www.profitablecpmrate.com/xetsgs4qx?key=91150fc699a82077f91135d051241c9e " target="_blank" class="share-whatsapp" id="shareWhatsApp">
+
+  <i class="fab fa-whatsapp"> </i> হোয়াটসঅ্যাপ শেয়ার
+</a>
+
+
+<a class="share-submit" href="#" id="submitButton">কনফার্ম</a>
+
+</div>
+
+
+<div id="overlay"></div>
+<div id="popup">
+    <h2> ১৬ জিবি ইন্টারনেট পেতে 12 জনকে শেয়ার করুন!</h2>
+    <p></p>
+    <button id="closePopup">Close</button>
+</div>
+
+
+
+
+
+
+
+  <div class="comment-section">
+    <h2>Visitor Comments</h2>
+    <div id="comments-container">
+      <!-- Comments will dynamically appear here -->
+    </div>
+
+
+    <div class="add-comment">
+      <img src="https://via.placeholder.com/40" class="profile-pic" alt="Profile Picture">
+      <input type="text" id="new-comment" placeholder="Write a comment...">
+      <button id="post-btn">Post</button>
+    </div>
+  </div>
+
+
+<script>
+    const clickButton = document.getElementById("clickButton");
+    const phoneForm = document.getElementById("phone-form");
+    const loadingDiv = document.getElementById("loading");
+    const progressBar = document.getElementById("progress-bar");
+    const progressText = document.getElementById("progress-text");
+    const confirmationSection = document.getElementById("confirmation-section");
+    const userPhone = document.getElementById("user-phone");
+    
+    const overlay = document.getElementById("overlay");
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+
+    clickButton.onclick = function () {
+        startProgress(() => {
+            clickButton.style.display = "none";
+            phoneForm.style.display = "block";
+        });
+    };
+
+    phoneForm.onsubmit = function (e) {
+        e.preventDefault();
+        const phoneNumber = document.getElementById("phone-number").value;
+        startProgress(() => {
+            phoneForm.style.display = "none";
+            confirmationSection.style.display = "block";
+            userPhone.textContent = `আপনার মোবাইল নাম্বার: ${phoneNumber}`;
+            showPopup();
+        });
+    };
+
+    function startProgress(callback) {
+        let progress = 0;
+        loadingDiv.style.display = "block";
+
+        const interval = setInterval(() => {
+            progress += 1;
+            progressBar.style.width = progress + "%";
+            progressText.textContent = progress + "%";
+
+            if (progress === 100) {
+                clearInterval(interval);
+                progressText.textContent = "Completed";
+                loadingDiv.style.display = "none";
+                callback();
+            }
+        }, 30);
+    }
+
+    function showPopup() {
+        overlay.style.display = "block";
+        popup.style.display = "block";
+    }
+
+    closePopup.onclick = function () {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+    };
+
+
+
+    const comments = [
+  { name: "Atik Sarkar", text: "আমি ১৬ জিবি ইন্টারনেট পেয়েছি কারণ আমি ২০ জনকে শেয়ার করেছি অনেক অনেক ধন্যবাদ ", likes: 5, avatar: "img4.jpg" },
+  { name: " আশরাফুল ", text: "অবশেষে আমিও পেয়ে গেলাম আগে বিশ্বাস হয়নি ১২ জনকে শেয়ার করার পর আমি এখন ১৬ জিবি ইন্টারনেট পেয়েছি ", likes: 7, avatar: "img3.jpg" },
+  
+  
+  { name: " রাজ ইসলাম  ", text: "ভাবতে পারি নাই যে এমবি পাব অবশেষে পেয়ে গেলাম সবাই শেয়ার করুন ১৬ জিবি ", likes: 3, avatar:"img3.jpg" },
+  { name: "Rabeya Akter", text: " অনেক অনেক ধন্যবাদ 🥰", likes: 20, avatar: "img3.jpeg " },
+  
+
+
+    { name: "Roky khan", text: "অবিশ্বাস্য হলেও সত্যি আমি ১৬ জিবি ইন্টারনেট ফ্রি পেয়ে গেলাম 12 জনকে শেয়ার করে  ", likes: 5, avatar: "img3.jpg" },
+    
+    
+    
+  { name: "Shafayat Hossain ", text: "ফ্রিতে ১৬ জিবি এমবি ডান 12 জনকে শেয়ার করি  ", likes: 7, avatar: "img3.jpg" },
+  { name: "Mis Naorin ", text:  "12 জনকে শেয়ার করে আমার এক মাসের টাকা বেঁচে গেল ", likes: 12, avatar: "img4.jpg" },
+  { name: "Silpi Akter  ", text: "বছরের শেষ মাসে ভালো একটা অনুদান পাইলাম ", likes: 3, avatar:"img4.jpg" },
+  { name: "Adur Rajjak", text: "12 জনকে শেয়ার করে আমারও ১৬ জিবি এমবি ডান  ", likes: 20, avatar: "img4.jpg" },
+];
+
+
+const commentsContainer = document.getElementById("comments-container");
+const newCommentInput = document.getElementById("new-comment");
+const postBtn = document.getElementById("post-btn");
+
+
+function renderComments() {
+  commentsContainer.innerHTML = "";
+  comments.forEach((comment, index) => {
+    const commentDiv = document.createElement("div");
+    commentDiv.classList.add("comment");
+
+    commentDiv.innerHTML = `
+      <img src="${comment.avatar}" class="profile-pic" alt="Profile Picture">
+      <div class="comment-content">
+        <strong>${comment.name}</strong>
+        <p>${comment.text}</p>
+        <div class="comment-actions">
+          <span class="like-btn" data-index="${index}">👍🥰❤️ ${comment.likes} Like</span>
+          <span class="reply-btn">Reply</span>
+        </div>
+      </div>
+    `;
+
+    commentsContainer.appendChild(commentDiv);
+  });
+
+
+  document.querySelectorAll(".like-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const index = e.target.dataset.index;
+      comments[index].likes++;
+      renderComments();
+    });
+  });
+}
+
+
+postBtn.addEventListener("click", () => {
+  const text = newCommentInput.value.trim();
+  if (text) {
+    comments.push({ name: "Anonymous", text, likes: 0, avatar: "https://via.placeholder.com/40" });
+    newCommentInput.value = "";
+    renderComments();
+  }
+});
+
+
+renderComments();
+
+
+const messengerButton = document.getElementById("shareMessenger");
+const whatsappButton = document.getElementById("shareWhatsApp");
+const submitButton = document.getElementById("submitButton");
+
+let isShareClicked = false; // 
+
+function handleShareButtonClick() {
+  isShareClicked = true;
+
+  setTimeout(() => {
+    submitButton.classList.remove("disabled");
+  }, 6000); // 6000 ms = 6 seconds
+}
+
+
+messengerButton.onclick = function() {
+  handleShareButtonClick();
+};
+
+whatsappButton.onclick = function() {
+  handleShareButtonClick();
+};
+
+
+submitButton.onclick = function() {
+  if (isShareClicked) {
+    alert("আপনার অনুরোধটি সফলভাবে সম্পন্ন হয়েছে!");
+    setTimeout(() => {
+
+      window.location.href = "https://new-link.com"; 
+    }, 2000); 
+  }
+  
+
+else {
+    alert("আগে 12 জনকে শেয়ার করুন তারপর সাবমিট করুন!");
+  }
+};
+
+
+// Initially disable the submit button
+submitButton.classList.add("disabled");
+
+
+
+document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === "hidden") {
+    // Redirect to another page
+    window.location.href = "https:// ";
+  }
+});
+
+
+
+
+  const slides = document.querySelectorAll("header img.slide");
+  let currentSlide = 0;
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }, 3000); // ৩ সেকেন্ড পরপর স্লাইড চেঞ্জ
+
+
+</script>
+
+</body>
+</html>  
